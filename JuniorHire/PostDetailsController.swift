@@ -43,7 +43,7 @@ class PostDetailsController: UIViewController {
         let storageRef = storage.reference()
         
         // Create a reference to the PDF file using the post ID
-        let pdfRef = storageRef.child("\(postId).pdf")
+        let pdfRef = storageRef.child("posts").child("\(postId).pdf")
         
         // Fetch the download URL for the PDF file
         pdfRef.downloadURL { [weak self] (url, error) in

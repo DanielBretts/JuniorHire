@@ -1,14 +1,7 @@
-//
-//  JobPostTableViewCell.swift
-//  JuniorHire
-//
-//  Created by amit lupo  on 8/20/24.
-//
-
 import UIKit
 
 class JobPostTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var locationLbl: UILabel!
     @IBOutlet weak var dateOfExpirationLbl: UILabel!
     @IBOutlet weak var remainingDaysLbl: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!

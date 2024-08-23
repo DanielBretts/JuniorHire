@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0342BB3D2C78A99F00BEB55D /* AddNewPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342BB3C2C78A99F00BEB55D /* AddNewPostController.swift */; };
 		0348C3332C765A5A000FACC2 /* PostDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348C3322C765A5A000FACC2 /* PostDetailsController.swift */; };
 		03583F802C55288D001BA827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03583F7F2C55288D001BA827 /* AppDelegate.swift */; };
 		03583F822C55288D001BA827 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03583F812C55288D001BA827 /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0342BB3C2C78A99F00BEB55D /* AddNewPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPostController.swift; sourceTree = "<group>"; };
 		0348C3322C765A5A000FACC2 /* PostDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsController.swift; sourceTree = "<group>"; };
 		03583F7C2C55288D001BA827 /* JuniorHire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuniorHire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03583F7F2C55288D001BA827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				03583FA02C7508B3001BA827 /* JobPostTableViewCell.xib */,
 				03583FA32C750DF1001BA827 /* Post.swift */,
 				0348C3322C765A5A000FACC2 /* PostDetailsController.swift */,
+				0342BB3C2C78A99F00BEB55D /* AddNewPostController.swift */,
 			);
 			path = JuniorHire;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				0348C3332C765A5A000FACC2 /* PostDetailsController.swift in Sources */,
 				03583FA12C7508B4001BA827 /* JobPostTableViewCell.swift in Sources */,
 				03583F802C55288D001BA827 /* AppDelegate.swift in Sources */,
+				0342BB3D2C78A99F00BEB55D /* AddNewPostController.swift in Sources */,
 				03583F822C55288D001BA827 /* SceneDelegate.swift in Sources */,
 				03583FA42C750DF1001BA827 /* Post.swift in Sources */,
 			);

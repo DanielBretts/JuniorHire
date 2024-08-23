@@ -28,17 +28,38 @@ class ViewController: UIViewController {
         fetchPosts()
     }
     
+    private var listener: ListenerRegistration?
+
     private func fetchPosts() {
         let db = Firestore.firestore()
-        db.collection("posts").getDocuments{(data, error) in
-            if error == nil && data != nil{
-                    self.posts = data?.documents.compactMap { document in
-                                        return Post(dictionary: document.data(), id: document.documentID)
-                                    } ?? []
-                    print(self.posts)
-                                    self.tableViewPosts.reloadData()
-                
-            }}}
+        
+        // Set up the Firestore listener
+        listener = db.collection("posts").addSnapshotListener { (snapshot, error) in
+            if let error = error {
+                print("Error fetching posts: \(error)")
+                return
+            }
+            
+            guard let snapshot = snapshot else {
+                print("No posts found")
+                return
+            }
+            
+            self.posts = snapshot.documents.compactMap { document in
+                return Post(dictionary: document.data(), id: document.documentID)
+            }
+            
+            print("Posts updated: \(self.posts)")
+            self.tableViewPosts.reloadData()
+        }
+    }
+
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        listener?.remove()
+    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPostDetail" {
@@ -48,6 +69,13 @@ class ViewController: UIViewController {
                 destinationVC.post = selectedPost
             }
         }
+    }
+    
+    
+    @IBAction func addNewPost(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle:nil)
+                let secondController = storyboard.instantiateViewController(withIdentifier: "AddNewPostView")
+                self.present(secondController, animated: true,completion: nil)
     }
 }
 
@@ -68,6 +96,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.companyNameLbl.text = "at \(post.companyName)"
         cell.remainingDaysLbl.text = "\(post.estimatedDaysToComplete) Days"
         cell.descriptionLbl.text = post.jobDescription
+        cell.locationLbl.text = "📍\(post.location)"
         
         // Formatting date for display
         let dateFormatter = DateFormatter()
@@ -81,6 +110,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showPostDetail", sender: self)
     }
+    
+    
 
 
 }
