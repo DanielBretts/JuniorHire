@@ -9,9 +9,7 @@ Introducing "JuniorHire" The easiest way for juniors to find their first job wit
 
 ## Screenshots
 
-<img src="https://github.com/DanielBretts/Remind-Me-Near/assets/60986160/29ae13c5-997c-4720-a93b-b7fceca60fe4" alt="app screenshot" width="200" height="400">
-<br>
-<img src="https://github.com/DanielBretts/Remind-Me-Near/assets/60986160/8c5563b5-8de7-496b-a3fe-5e488146ab55" alt="notification" width="400" height="100">
+<img src="https://github.com/user-attachments/assets/af20cbd7-a087-4d53-871a-29553d70cea3" alt="app screenshot" width="200" height="400">
 
 ## Key Features:
 - **Challenge-Based Job Applications**: Companies post various home assignments and challenges instead of requiring traditional CVs. 
