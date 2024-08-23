@@ -6,6 +6,10 @@ width="200" hspace="10" vspace="10">
 ## About
 
 Introducing "JuniorHire" The easiest way for juniors to find their first job without a CV - by completing challenges and home assignments.
+</br>
+</br>
+</br>
+</br>
 
 ## Key Features:
 - **Challenge-Based Job Applications**: Companies post various home assignments and challenges instead of requiring traditional CVs. 
