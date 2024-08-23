@@ -7,23 +7,24 @@ width="200" hspace="10" vspace="10">
 
 Introducing "JuniorHire" The easiest way for juniors to find their first job without a CV - by completing challenges and home assignments.
 
-## Screenshots
-
-<img src="https://github.com/user-attachments/assets/af20cbd7-a087-4d53-871a-29553d70cea3" alt="app screenshot" width="200" height="400">
-
 ## Key Features:
 - **Challenge-Based Job Applications**: Companies post various home assignments and challenges instead of requiring traditional CVs. 
 - **Practical Skill Demonstration**: Candidates can browse through challenges, start working on them, and submit their final results.
 - **No Prior Experience Needed**: The focus is purely on your ability to solve real-world problems, without the need for a detailed work history or CV.
-
-## Presentation
-
 
 
 ## Technologies
 ### Firebase Integration:
 - **Firebase Storage**: Used for storing and managing PDF files.
 - **Firestore**: Handles the basic data storage and retrieval operations to keep the app responsive and up-to-date.
+
+## Presentation
+
+## Screenshots
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/871b95f4-b760-4323-aa43-647fe680961a" alt="Image 1" width="30%">
+  <img src="https://github.com/user-attachments/assets/c29dffec-8f6f-455e-b3bf-8c4c684947d9" alt="Image 2" width="30%">
+</p>
 
 
 ### Credits
