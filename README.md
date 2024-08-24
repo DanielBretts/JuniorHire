@@ -24,6 +24,9 @@ Introducing "JuniorHire" The easiest way for juniors to find their first job wit
 
 ## Presentation
 
+https://github.com/user-attachments/assets/2e9e5695-ccd0-4a6a-8e0d-5ad0a8fdedda
+
+
 ## Screenshots
 <p align="center">
   <img src="https://github.com/user-attachments/assets/871b95f4-b760-4323-aa43-647fe680961a" alt="Image 1" width="30%">
